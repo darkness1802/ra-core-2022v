@@ -20,12 +20,10 @@ app.use(bodyParser.json())
 DBConnect()
 
 app.get("/", (req, res) => {
-    console.log("Hello World")
-    return res.json({ cpu: os.cpus() })
+    return res.json('Hello world: I am Tung Hwang !!!')
 })
 
 app.get("/ping", (req, res) => {
-    console.log(req.headers)
     return res.json(`PING`)
 })
 
